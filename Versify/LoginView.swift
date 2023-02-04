@@ -19,7 +19,13 @@ struct LoginView: View {
             VStack {
                 Image("Vlogo")
                     .resizable()
-                .scaledToFit()
+                    .scaledToFit()
+                Link("Spotify Login", destination: URL(string: "https://accounts.spotify.com/en/login")!)
+                        .bold()
+                        .frame(width: 200, height: 45)
+                        .foregroundColor(.white)
+                        .background(Color.green)
+                        .cornerRadius(100)
             }
         }
         
