@@ -22,9 +22,9 @@ struct LoginView: View {
                     .scaledToFit()
                 Link("Spotify Login", destination: URL(string: "https://accounts.spotify.com/en/login")!)
                         .bold()
-                        .frame(width: 200, height: 45)
-                        .foregroundColor(.white)
-                        .background(Color.green)
+                        .frame(width: 250, height: 55)
+                        .foregroundColor(.black)
+                        .background(Color("VersifyGreen"))
                         .cornerRadius(100)
             }
         }
