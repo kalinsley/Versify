@@ -34,8 +34,9 @@ struct HomeView: View {
                                     .background(Color("VersifyGreen"))
                                     .cornerRadius(100)
                                     .padding(.bottom)
+                        
                         NavigationLink(destination: LoginView()) {
-                            Text("Versify Map")
+                            Text("UCSC Affiliation")
                         }
                             .bold()
                             .font(.title3)
