@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24253C09298E208F00757948 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24253C08298E208F00757948 /* SpotifyiOS.framework */; };
 		EE13EC31298E074600B6C5AD /* VersifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE13EC30298E074600B6C5AD /* VersifyApp.swift */; };
 		EE13EC33298E074600B6C5AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE13EC32298E074600B6C5AD /* ContentView.swift */; };
 		EE13EC35298E074700B6C5AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE13EC34298E074700B6C5AD /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24253C08298E208F00757948 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotifyiOS.framework; path = Versify/SpotifyiOS.framework; sourceTree = SOURCE_ROOT; };
 		EE13EC2D298E074600B6C5AD /* Versify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Versify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE13EC30298E074600B6C5AD /* VersifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersifyApp.swift; sourceTree = "<group>"; };
 		EE13EC32298E074600B6C5AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24253C09298E208F00757948 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +109,7 @@
 				EE13EC34298E074700B6C5AD /* Assets.xcassets */,
 				EE13EC39298E074700B6C5AD /* Persistence.swift */,
 				EE13EC3B298E074700B6C5AD /* Versify.xcdatamodeld */,
+				24253C08298E208F00757948 /* SpotifyiOS.framework */,
 				EE13EC36298E074700B6C5AD /* Preview Content */,
 			);
 			path = Versify;
@@ -431,6 +435,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Versify/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Z52B45CFP;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Versify",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -460,6 +468,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Versify/Preview Content\"";
 				DEVELOPMENT_TEAM = 5Z52B45CFP;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Versify",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
