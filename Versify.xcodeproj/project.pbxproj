@@ -16,7 +16,9 @@
 		EE13EC47298E074700B6C5AD /* VersifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE13EC46298E074700B6C5AD /* VersifyTests.swift */; };
 		EE13EC51298E074700B6C5AD /* VersifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE13EC50298E074700B6C5AD /* VersifyUITests.swift */; };
 		EE13EC53298E074700B6C5AD /* VersifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE13EC52298E074700B6C5AD /* VersifyUITestsLaunchTests.swift */; };
-		EED3E28E298E0C63009B9268 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E28D298E0C63009B9268 /* LoginView.swift */; };
+		EED3E28E298E0C63009B9268 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E28D298E0C63009B9268 /* HomeView.swift */; };
+		EED3E290298E2CB5009B9268 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E28F298E2CB5009B9268 /* MapView.swift */; };
+		EED3E292298E3364009B9268 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E291298E3364009B9268 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,9 @@
 		EE13EC4C298E074700B6C5AD /* VersifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VersifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE13EC50298E074700B6C5AD /* VersifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersifyUITests.swift; sourceTree = "<group>"; };
 		EE13EC52298E074700B6C5AD /* VersifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EED3E28D298E0C63009B9268 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EED3E28D298E0C63009B9268 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		EED3E28F298E2CB5009B9268 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		EED3E291298E3364009B9268 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,9 @@
 			children = (
 				EE13EC30298E074600B6C5AD /* VersifyApp.swift */,
 				EE13EC32298E074600B6C5AD /* ContentView.swift */,
-				EED3E28D298E0C63009B9268 /* LoginView.swift */,
+				EED3E28D298E0C63009B9268 /* HomeView.swift */,
+				EED3E291298E3364009B9268 /* LoginView.swift */,
+				EED3E28F298E2CB5009B9268 /* MapView.swift */,
 				EE13EC34298E074700B6C5AD /* Assets.xcassets */,
 				EE13EC39298E074700B6C5AD /* Persistence.swift */,
 				EE13EC3B298E074700B6C5AD /* Versify.xcdatamodeld */,
@@ -267,9 +273,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE13EC3D298E074700B6C5AD /* Versify.xcdatamodeld in Sources */,
+				EED3E292298E3364009B9268 /* LoginView.swift in Sources */,
+				EED3E290298E2CB5009B9268 /* MapView.swift in Sources */,
 				EE13EC3A298E074700B6C5AD /* Persistence.swift in Sources */,
 				EE13EC33298E074600B6C5AD /* ContentView.swift in Sources */,
-				EED3E28E298E0C63009B9268 /* LoginView.swift in Sources */,
+				EED3E28E298E0C63009B9268 /* HomeView.swift in Sources */,
 				EE13EC31298E074600B6C5AD /* VersifyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
