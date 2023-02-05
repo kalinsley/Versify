@@ -124,7 +124,7 @@ struct PlaylistView: View {
                 }
                 
                 NavigationLink(destination: MapView(location: CLLocationCoordinate2D(latitude: 36.974117, longitude: -122.030792))) {
-                    Text("Explore the Soundverse!")
+                    Text("Explore Versify!")
                 }
                 .bold()
                 .font(.title3)
