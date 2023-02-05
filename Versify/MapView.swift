@@ -17,10 +17,14 @@ struct Location: Identifiable {
 
 struct MapView: View {
     
+    @State private var selection: String =  ""
+    
     var location: CLLocationCoordinate2D
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 36.999122, longitude: -122.060818), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
     
-    let colleges = [
+    let colleges = ["Cowell/Stevenson", "Crown/Merrill", "9/JRL", "Porter/Kresge", "RC/Oakes"]
+    
+    let collegeLocations = [
         Location(name: "Cowell/Stevenson", coordinates: CLLocationCoordinate2D(latitude: 36.996812, longitude: -122.053074)),
         Location(name: "Crown/Merrill", coordinates: CLLocationCoordinate2D(latitude: 37.000128, longitude: -122.054409)),
         Location(name: "9/JRL", coordinates: CLLocationCoordinate2D(latitude: 37.000616, longitude: -122.057714)),
@@ -29,8 +33,8 @@ struct MapView: View {
     ]
     
     var body: some View {
-        VStack {
-            Map(coordinateRegion: $region, annotationItems: colleges) {
+        ZStack {
+            Map(coordinateRegion: $region, annotationItems: collegeLocations) {
                 college in
                 MapAnnotation(coordinate: college.coordinates) {
                     Circle()
@@ -39,16 +43,7 @@ struct MapView: View {
             
                 }
             }
-            Picker("", selection: $selection) {
-                ForEach(colleges, id: \.self) {
-                    Text($0)
-                        .foregroundColor(.white)
-                }
-            }
-            .pickerStyle(.inline)
-            .frame(maxWidth: 300, maxHeight: 320)
-            .padding(.top)
-            .padding(.bottom)
+            .ignoresSafeArea()
         }
     }
     
