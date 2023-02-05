@@ -10,7 +10,16 @@ import CoreData
 
 struct ContentView: View {
     var body: some View {
-        HomeView()
+        VStack {
+            HomeView()
+            /* if UserDefaults.standard.bool(forKey: "existingUser") {
+                HomeView() 
+            } else {
+                MapView()
+            }
+             */
+        }
+        
     }
 }
 

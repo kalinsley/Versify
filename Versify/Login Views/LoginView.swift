@@ -13,6 +13,7 @@ struct LoginView: View {
     let userDefaults = UserDefaults.standard
     
     @AppStorage("savedCollege") var savedCollege = ""
+    @AppStorage("existingUser") var existingUser = true
     
     @State private var selection: String =  ""
     
@@ -25,7 +26,7 @@ struct LoginView: View {
                 .ignoresSafeArea()
             
             VStack {
-                Image("affwhite")
+                Image("aff2")
                     .resizable()
                     .scaledToFit()
                     .frame(alignment: .top)
@@ -43,11 +44,12 @@ struct LoginView: View {
                 .padding(.bottom)
             
                 // go -> mapview after selecting college
-                NavigationLink(destination: MapView().onAppear {
+                NavigationLink(destination: PlaylistView().onAppear {
                     UserDefaults.standard.set(selection, forKey: "COLLEGE_TEXT")
                     savedCollege = selection
+                    existingUser = true
                 }) {
-                    Text("Go")
+                    Text("Login")
                 }
                     .bold()
                     .font(.title3)
@@ -56,11 +58,6 @@ struct LoginView: View {
                     .background(Color("VersifyGreen"))
                     .cornerRadius(100)
                     .padding(.bottom)
-                
-                Section(header: Text("Previously Selected")) {
-                    Text(savedCollege)
-                        .foregroundColor(.white)
-                }
             }
         }
     }
