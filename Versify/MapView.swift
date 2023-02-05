@@ -16,8 +16,9 @@ struct Location: Identifiable {
 
 
 struct MapView: View {
+    
     var location: CLLocationCoordinate2D
-    @State private var region = MKCoordinateRegion()
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 36.999122, longitude: -122.060818), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
     
     let colleges = [
         Location(name: "Cowell/Stevenson", coordinates: CLLocationCoordinate2D(latitude: 36.996812, longitude: -122.053074)),
@@ -28,15 +29,31 @@ struct MapView: View {
     ]
     
     var body: some View {
-        Map(coordinateRegion: $region)
-            .onAppear {
-                setregion(location)
+        VStack {
+            Map(coordinateRegion: $region, annotationItems: colleges) {
+                college in
+                MapAnnotation(coordinate: college.coordinates) {
+                    Circle()
+                        .stroke(.red, lineWidth: 3)
+                        .frame(width: 44, height: 44)
+            
+                }
             }
+            Picker("", selection: $selection) {
+                ForEach(colleges, id: \.self) {
+                    Text($0)
+                        .foregroundColor(.white)
+                }
+            }
+            .pickerStyle(.inline)
+            .frame(maxWidth: 300, maxHeight: 320)
+            .padding(.top)
+            .padding(.bottom)
+        }
     }
     
     
     private func setregion(_ coordinate: CLLocationCoordinate2D) {
-    
     region = MKCoordinateRegion(
         center: location,
         span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
