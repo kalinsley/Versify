@@ -18,6 +18,9 @@
 		EE13EC53298E074700B6C5AD /* VersifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE13EC52298E074700B6C5AD /* VersifyUITestsLaunchTests.swift */; };
 		EEC827F8298F132F00CA6055 /* SpotifyAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC827F7298F132F00CA6055 /* SpotifyAuthView.swift */; };
 		EEC827FB298F2F0300CA6055 /* PlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC827FA298F2F0300CA6055 /* PlaylistView.swift */; };
+		EEC82800298F32AC00CA6055 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC827FF298F32AC00CA6055 /* SongView.swift */; };
+		EEC82804298F3C9100CA6055 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC82803298F3C9100CA6055 /* Songs.swift */; };
+		EEC82806298F3DF300CA6055 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC82805298F3DF300CA6055 /* MapView.swift */; };
 		EED3E28E298E0C63009B9268 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E28D298E0C63009B9268 /* HomeView.swift */; };
 		EED3E292298E3364009B9268 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED3E291298E3364009B9268 /* LoginView.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +57,9 @@
 		EE13EC52298E074700B6C5AD /* VersifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EEC827F7298F132F00CA6055 /* SpotifyAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAuthView.swift; sourceTree = "<group>"; };
 		EEC827FA298F2F0300CA6055 /* PlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistView.swift; sourceTree = "<group>"; };
+		EEC827FF298F32AC00CA6055 /* SongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongView.swift; sourceTree = "<group>"; };
+		EEC82803298F3C9100CA6055 /* Songs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
+		EEC82805298F3DF300CA6055 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		EED3E28D298E0C63009B9268 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		EED3E291298E3364009B9268 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,9 +115,12 @@
 				EE13EC30298E074600B6C5AD /* VersifyApp.swift */,
 				EE13EC32298E074600B6C5AD /* ContentView.swift */,
 				EEC827F9298F133500CA6055 /* Login Views */,
-				EE13EC34298E074700B6C5AD /* Assets.xcassets */,
 				EEC827FA298F2F0300CA6055 /* PlaylistView.swift */,
+				EEC827FF298F32AC00CA6055 /* SongView.swift */,
+				EEC82805298F3DF300CA6055 /* MapView.swift */,
+				EEC82803298F3C9100CA6055 /* Songs.swift */,
 				EE13EC39298E074700B6C5AD /* Persistence.swift */,
+				EE13EC34298E074700B6C5AD /* Assets.xcassets */,
 				EE13EC3B298E074700B6C5AD /* Versify.xcdatamodeld */,
 				EE13EC36298E074700B6C5AD /* Preview Content */,
 			);
@@ -283,7 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEC82804298F3C9100CA6055 /* Songs.swift in Sources */,
+				EEC82800298F32AC00CA6055 /* SongView.swift in Sources */,
 				EE13EC3D298E074700B6C5AD /* Versify.xcdatamodeld in Sources */,
+				EEC82806298F3DF300CA6055 /* MapView.swift in Sources */,
 				EED3E292298E3364009B9268 /* LoginView.swift in Sources */,
 				EEC827FB298F2F0300CA6055 /* PlaylistView.swift in Sources */,
 				EEC827F8298F132F00CA6055 /* SpotifyAuthView.swift in Sources */,
