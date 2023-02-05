@@ -40,7 +40,7 @@ struct PlaylistView: View {
                             Image(systemName: "house.fill")
                         }
                     } else {
-                        Link("Cowell/Stevenson", destination: URL(string: "https://open.spotify.com/playlist/37i9dQZF1DX0XUsuxWHRQd?si=3d11971b615c413a")!)
+                        Link("Cowell/Stevenson", destination: URL(string: "https://open.spotify.com/playlist/7pfqvX9xpuXsGuHM8j9aQK?si=017cb41db8dc4ce3")!)
                             .font(.title3)
                             .frame(maxWidth: 250, maxHeight: 35)
                             .foregroundColor(.black)
