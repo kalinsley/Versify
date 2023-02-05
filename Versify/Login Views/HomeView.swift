@@ -27,7 +27,7 @@ struct HomeView: View {
                         
                     if UserDefaults.standard.bool(forKey: "existingUser") {
                         NavigationLink(destination: PlaylistView()) {
-                            Text("Welcome!")
+                            Text("Welcome Back!")
                         }
                         .bold()
                         .font(.title3)
